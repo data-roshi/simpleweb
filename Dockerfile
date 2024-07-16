@@ -1,4 +1,6 @@
-FROM node:22-alpine
+FROM node:14-alpine
+
+COPY ./dockerfiles ./
 
 RUN npm install
 
