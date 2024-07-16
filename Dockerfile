@@ -1,6 +1,8 @@
 FROM node:14-alpine
 
-COPY ./dockerfiles ./
+WORKDIR /usr/app
+
+COPY ./ ./
 
 RUN npm install
 
